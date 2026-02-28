@@ -1,4 +1,4 @@
-import sys, os
-sys.path.append(os.path.abspath("."))
+import streamlit as st
 from src.ui.panels.live_scoreboard import render_scoreboard
-render_scoreboard(states=[])
+
+st.text(render_scoreboard(states=[]))
